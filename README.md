@@ -1,7 +1,7 @@
-#HPC Project: background modeling with cuda
+HPC Project: background modeling with cuda
 
 
-- FILES EXPLANATION
+- Files explanation
     - Source code
         1) sequential.cpp         c++ sequential implementation of the algorithm
         2) hpc_cuda.cu            cuda implementation with managed memory
@@ -26,7 +26,7 @@
     - Image Files
         some input and output to show what's going on.
         
-- NOTES
+- Notes
     Short explanation
         In hpc_cuda.cu file the code is fully commented, to understand how it works.
         The aim of the program is to build a robust description of the background in order to segment
