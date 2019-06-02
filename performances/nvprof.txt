@@ -1,0 +1,26 @@
+==101975== NVPROF is profiling process 101975, command: ./a.ou
+==101975== Profiling application: ./a.ou
+==101975== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+100.00%  148.07ms      1200  123.40us  44.129us  142.47us  kernel(unsigned char*, Dict*, int, int)
+
+==101975== Unified Memory profiling result:
+Device "Tesla K40m (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+    2400  204.00KB  24.000KB  384.00KB  478.1250MB  54.67702ms  Host To Device
+   12010  44.800KB  4.0000KB  124.00KB  525.4375MB  70.23261ms  Device To Host
+Total CPU Page faults: 6005
+
+==101975== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+ 45.53%  304.10ms         2  152.05ms  14.370ms  289.73ms  cudaMallocManaged
+ 30.46%  203.45ms      1200  169.55us  139.12us  571.17us  cudaLaunch
+ 23.26%  155.34ms      1200  129.45us  49.587us  153.68us  cudaDeviceSynchronize
+  0.22%  1.4532ms      1200  1.2110us     895ns  18.520us  cudaConfigureCall
+  0.22%  1.4529ms         2  726.43us  159.82us  1.2930ms  cudaFree
+  0.21%  1.4271ms      4800     297ns     136ns  9.5650us  cudaSetupArgument
+  0.05%  308.48us         1  308.48us  308.48us  308.48us  cuDeviceTotalMem
+  0.05%  303.33us        91  3.3330us     135ns  108.75us  cuDeviceGetAttribute
+  0.00%  24.188us         1  24.188us  24.188us  24.188us  cuDeviceGetName
+  0.00%  3.6290us         3  1.2090us     283ns  2.7790us  cuDeviceGetCount
+  0.00%  1.0840us         3     361ns     198ns     613ns  cuDeviceGet
